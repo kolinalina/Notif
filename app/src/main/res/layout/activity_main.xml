@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fl_container"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+        <com.lina.kolina.javisapp.BottomNavView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/bottom_nav"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin_id"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="40dp"
+        android:background="@drawable/oval">
+
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/fab"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            app:vector_src="@drawable/home"
+            app:elevation="6dp"
+            android:visibility="gone"
+            />
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/fab1"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            app:vector_src="@drawable/monitoring"
+            app:elevation="6dp"
+
+            />
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/fab2"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            app:vector_src="@drawable/profile"
+            app:elevation="6dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

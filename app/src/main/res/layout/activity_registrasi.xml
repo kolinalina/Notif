@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+
+    android:background="@drawable/bg1"
+    tools:context=".RegistrasiActivity">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="124dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/javis" />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etPerusahaan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+
+                android:drawableStart="@drawable/perusahaan"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Nama Perusahaan"
+                android:inputType="text"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#e4e3e3"
+
+                android:textColorHighlight="@color/colorAccent"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etAlamatPerusahaan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+
+                android:drawableStart="@drawable/alamat"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Alamat Perusahaan"
+                android:inputType="text"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#e4e3e3"
+
+                android:textColorHighlight="@color/colorAccent"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etFullname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+
+                android:drawableStart="@drawable/fullname"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Nama Lengkap"
+                android:inputType="text"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#e4e3e3"
+
+                android:textColorHighlight="@color/colorAccent"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#e4e3e3"
+
+                android:textColorHighlight="@color/colorAccent"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etNohp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+
+                android:drawableStart="@drawable/ic_call_black_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="No.HP"
+                android:inputType="number"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#e4e3e3"
+
+                android:textColorHighlight="@color/colorAccent"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="30dp">
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#e4e3e3"
+
+                android:textColorHighlight="@color/colorAccent"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp"
+            android:text="@string/sudah_mempunyai_akun"
+            android:textColor="#fff"
+            tools:ignore="RtlCompat" />
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:text="REGISTRASI"
+            android:textColor="#fff"
+            android:background="@drawable/shapesignup"
+            />
+
+
+
+        <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

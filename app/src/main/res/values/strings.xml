@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Notifikasi Proyek</string>
+    <string name="log_in">LOGIN</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tidak_mempunyai_akun">Tidak mempunyai akun?   <u>Registrasi</u></string>
+    <string name="sudah_mempunyai_akun">Sudah mempunyai akun? <u>Login</u></string>
+    <string name="list_order_complain"><![CDATA[List Order & Complain]]></string>
+    <string name="logout">LOGOUT</string>
+    <string name="account_details">Account Details</string>
+    <string name="nama_perusahaan">Nama Perusahaan</string>
+    <string name="alamat_perusahaan">Alamat Perusahaan</string>
+    <string name="email">Email</string>
+    <string name="deskripsi">Notifikasi Proyek merupakan sebuah aplikasi berbasis mobile dan website, yang mana aplikasi ini sangat membantu jalannya sebuah proyek. Proyek akan dihandle oleh sistem untuk mengirimkan sebuah notifikasi terhadap department terkait dan menyambungkannya ke user.</string>
+    <string name="order">Penjelasan : Client dapat melakukan pemesanan atau perbaikan proyek</string>
+    <string name="komplain">Penjelasan : Client dapat melakukan complain jika perbaikan yang disediakan kurang memuaskan</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/bg1"
+
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="124dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/javis" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:id="@+id/etEmail"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="text"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#e4e3e3"
+
+                android:textColorHighlight="@color/colorAccent"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="30dp">
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#e4e3e3"
+
+                android:textColorHighlight="@color/colorAccent"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp"
+            android:text="@string/tidak_mempunyai_akun"
+            android:textColor="#fff"
+            tools:ignore="RtlCompat" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/log_in"
+            android:textColor="#fff"
+            android:background="@drawable/shapesignup"
+            />
+
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loading"
+            android:visibility="gone"
+            android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

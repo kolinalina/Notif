@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.PelayananFragment"
+    android:layout_marginBottom="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+       >
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="3dp"
+        android:layout_below="@+id/list"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pelayanan"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/order"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:id="@+id/order"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+                android:src="@drawable/komplin"
+                android:layout_weight="1"
+                android:id="@+id/complain"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+                <TextView
+                    android:id="@+id/orderr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order"
+                    android:textFontWeight="1"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/complainn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complain"
+                android:textFontWeight="1"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="3dp"
+        android:layout_below="@+id/list"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/order_ket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order" />
+            <TextView
+                android:id="@+id/order_ket1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order"
+                android:layout_below="@+id/order_ket"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:id="@+id/deleteorder"-->
+        <!--android:text="DELETE ORDER"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:textColor="#ffffff"-->
+        <!--/>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/recyclerviewTemp"-->
+        <!--android:layout_margin="15dp"/>-->
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="3dp"
+        android:layout_below="@+id/list"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/complain_ket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complain" />
+            <TextView
+                android:id="@+id/complain_ket1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order"
+                android:layout_below="@+id/complain_ket"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/recyclerviewTempp"-->
+            <!--android:layout_margin="15dp"/>-->
+
+
+    </LinearLayout>
+    </ScrollView>

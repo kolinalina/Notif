@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/login_shape_bk"
+                android:layout_marginTop="180dp"
+                android:text="@string/logout"
+                android:id="@+id/logout"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin"
+                    android:src="@drawable/profile" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Id Client:"
+                    android:id="@+id/idclient"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Username"
+                    android:id="@+id/usernamepro"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_details"
+                android:textSize="15sp"
+                android:id="@+id/list"
+                android:layout_below="@+id/header"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"/>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/list">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="150dp">
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/body"
+                    android:padding="20dp">
+
+
+                    <TextView
+                        android:id="@+id/data1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nama_perusahaan"/>
+
+                    <TextView
+                        android:id="@+id/dataperusahaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/data1"
+                        android:text="Data 1"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/data2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dataperusahaan"
+                        android:text="@string/alamat_perusahaan"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/dataalamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/data2"
+                        android:text="Data 2"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/data3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dataalamat"
+                        android:text="@string/email"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/dataemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/data3"
+                        android:text="Data 3"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/data4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dataemail"
+                        android:text="No.HP"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/datanohp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/data4"
+                        android:text="Data 4"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
