@@ -87,6 +87,13 @@
                 android:layout_height="wrap_content"
                 android:text="lokasi"
                 android:id="@+id/lokasi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="status : "
+                android:id="@+id/statuss"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -150,10 +150,6 @@
                     android:hint="Deadline"
                     android:inputType="datetime"
                     android:backgroundTint="@color/colorAccent"
-                    android:textColor="@color/colorAccent"
-                    android:textColorHint="#e4e3e3"
-
-                    android:textColorHighlight="@color/colorAccent"
 
                     />
             </android.support.design.widget.TextInputLayout>

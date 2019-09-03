@@ -26,6 +26,8 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
+import static java.security.AccessController.getContext;
+
 public class FormOrderActivity extends AppCompatActivity {
     Calendar myCalendar;
     DatePickerDialog.OnDateSetListener date;
@@ -58,6 +60,7 @@ public class FormOrderActivity extends AppCompatActivity {
         lokasi = findViewById(R.id.etLokasiPro);
         btnorder = findViewById(R.id.btnOrder);
         pd = new ProgressDialog(FormOrderActivity.this);
+        User user = SharedPrefManager.getInstance(getApplicationContext()).getUser();
 
         myCalendar = Calendar.getInstance();
         date = new DatePickerDialog.OnDateSetListener() {
@@ -82,6 +85,8 @@ public class FormOrderActivity extends AppCompatActivity {
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
         });
+
+        idclient.setText(String.valueOf(user.getId_client()));
 
         /*kondisi update / insert*/
         if(update == 1)
@@ -109,25 +114,7 @@ public class FormOrderActivity extends AppCompatActivity {
         });
 
 
-//
-//        btnorder.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                String pesan1 = proyek.getText().toString();
-//                String pesan2 = deskripsi.getText().toString();
-//                String pesan3 = lokasi.getText().toString();
-//
-//                String semuapesan = "Nama Proyek: " + pesan1 + "\n" + "Deksripsi : " + pesan2 + "\n" + "Lokasi : " + pesan3;
-//
-//                Intent kirimWA = new Intent(Intent.ACTION_SEND);
-//                kirimWA.setType("text/plain");
-//                kirimWA.putExtra(Intent.EXTRA_TEXT, semuapesan);
-//                kirimWA.putExtra("jid", "6285712351319" + "@s.whatsapp.net");
-//                kirimWA.setPackage("com.whatsapp");
-//
-//                startActivity(kirimWA);
-//            }
-//        });
+
 
     }
 

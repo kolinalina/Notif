@@ -47,6 +47,7 @@ public class FormComplainActivity extends AppCompatActivity {
         idclient = findViewById(R.id.etClientt);
         idorder = findViewById(R.id.etOrderr);
         detail = findViewById(R.id.etDetail);
+        User user = SharedPrefManager.getInstance(getApplicationContext()).getUser();
        
         btnkomplain = findViewById(R.id.btnComplain);
         pd = new ProgressDialog(FormComplainActivity.this);
@@ -62,6 +63,8 @@ public class FormComplainActivity extends AppCompatActivity {
             detail.setText(intent_detail);
 
         }
+        idclient.setText(String.valueOf(user.getId_client()));
+
 
         btnkomplain.setOnClickListener(new View.OnClickListener() {
             @Override

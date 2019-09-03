@@ -64,23 +64,23 @@ public class PelayananFragment extends Fragment implements View.OnClickListener 
 
             orderr = view.findViewById(R.id.order);
             complainn = view.findViewById(R.id.complain);
-//            mRecyclerview = view.findViewById(R.id.recyclerviewTemp);
+            mRecyclerview = view.findViewById(R.id.recyclerviewTemp);
 //        mRecyclerview2 = view.findViewById(R.id.recyclerviewTempp);
-//
+
 //            btnDelete = view.findViewById(R.id.btn_delete);
-//            pd = new ProgressDialog(getActivity());
-//            mItems = new ArrayList<>();
-//
-//
-//            loadJson();
-//
-//
-//
-//            mManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
-//            mRecyclerview.setLayoutManager(mManager);
-//            mAdapter = new AdapterData(getActivity(), mItems);
-//            mRecyclerview.setAdapter(mAdapter);
-//
+            pd = new ProgressDialog(getActivity());
+            mItems = new ArrayList<>();
+
+
+            loadJson();
+
+
+
+            mManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+            mRecyclerview.setLayoutManager(mManager);
+            mAdapter = new AdapterData(getActivity(), mItems);
+            mRecyclerview.setAdapter(mAdapter);
+
 //        mItems2 = new ArrayList<>();
 //
 //        mManager2 = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
@@ -89,7 +89,7 @@ public class PelayananFragment extends Fragment implements View.OnClickListener 
 //        mRecyclerview2.setAdapter(mAdapter2);
 //
 //        loadJson2();
-//
+
 
             orderr.setOnClickListener(this);
             complainn.setOnClickListener(new View.OnClickListener() {

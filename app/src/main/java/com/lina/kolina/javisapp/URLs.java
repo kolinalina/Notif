@@ -13,7 +13,7 @@ public class URLs {
 
 
         public static final String URL_DATA2 = "http://proyekjavis.web.id/api/android_register_login/complainview.php";
-        public static final String URL_INSERT2 = "hhttp://proyekjavis.web.id/api/android_register_login/complaincreate.php";
+        public static final String URL_INSERT2 = "http://proyekjavis.web.id/api/android_register_login/complaincreate.php";
         public static final String URL_DELETE2 = "http://proyekjavis.web.id/api/android_register_login/complaindelete.php";
         public static final String URL_UPDATE2 = "http://proyekjavis.web.id/api/android_register_login/complainupdate.php";
 

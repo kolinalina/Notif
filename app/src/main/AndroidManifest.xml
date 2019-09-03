@@ -27,7 +27,6 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".PelayananActivity" />
         <activity android:name=".RegistrasiActivity" />
-        <activity android:name=".AdminActivity" />
     </application>
 
 </manifest>
